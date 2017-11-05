@@ -1,4 +1,6 @@
 $(document).ready(function() {
+  // hide resto pin first
+  $('#restoPin').hide();
   // login will show leftPane and show logut
   // logout will hide leftPane and show login
   var $loginLogout = $('#loginLogout')
@@ -12,11 +14,10 @@ $(document).ready(function() {
       $loginLogout.text('Login')
       $('#leftPane').removeClass('reveal');
       $('#restaurant').removeClass('show-resto');
+      $('#restoPin').hide();
     }
   })
 
-  // hide resto pin first
-  $('#restoPin').hide();
   // show restaurant pane and pin when clicking on groups
   var $restaurant = $('#restaurant');
   var $groupItems = $('.list-group-item');
