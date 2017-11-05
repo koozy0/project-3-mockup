@@ -1,0 +1,140 @@
+.navbar-side {
+  height: 100%;
+  width: 25%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 0;
+  list-style: none;
+  border-right: 2px solid #ccc;
+  background-color: #f7f7f9;
+  overflow-y: scroll;
+  z-index: 1000 !important;
+  -webkit-transform: translateX(-100%);
+  -ms-transform: translateX(-100%);
+  transform: translateX(-100%);
+  -webkit-transition: 300ms ease;
+  transition: 300ms ease;
+}
+
+.reveal {
+  -webkit-transform: translateX(0%) !important;
+  -ms-transform: translateX(0%) !important;
+  transform: translateX(0%) !important;
+  -webkit-transition: 300ms ease !important;
+  transition: 300ms ease !important;
+  z-index: 500;
+}
+
+.navbar-side-item {
+  padding: 1.5rem 0;
+  margin: 0;
+}
+
+.side-link {
+  padding-left: 2rem;
+}
+
+.overlay {
+  position: fixed;
+  display: none;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  cursor: pointer;
+  background-color: #ccc;
+  opacity: 0.6;
+  z-index: 990;
+}
+
+.profile-picture {
+  width: 30%;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+html, body {
+  margin: 0;
+  height: 100%;
+  min-height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  flex: none;
+}
+
+main {
+  overflow-y: hidden;
+  -webkit-overflow-scrolling: touch;
+  flex: auto;
+  background-image: url("../images/google_maps.jpg");
+}
+
+#leftPane {
+  display: inline-block;
+  height: 100vh;
+  width: 25%;
+  background-color: #f7f7f9;
+  top: 0;
+  left: 0;
+  position: relative;
+  overflow-y: scroll;
+  -webkit-transform: translateX(-100%);
+  -ms-transform: translateX(-100%);
+  transform: translateX(-100%);
+  -webkit-transition: 300ms ease;
+  transition: 300ms ease;
+  z-index: 500;
+}
+
+#userPin {
+  background-image: url("../images/pin.png");
+  background-size: cover;
+  height: 50px;
+  width: 30px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  -webkit-transform: translate(45rem, 25rem);
+  -ms-transform: translate(45rem, 25rem);
+  transform: translate(45rem, 25rem);
+}
+
+#restoPin {
+  background-image: url("../images/pin-two.png");
+  background-size: cover;
+  height: 50px;
+  width: 30px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  -webkit-transform: translate(60rem, 33rem);
+  -ms-transform: translate(60rem, 33rem);
+  transform: translate(60rem, 33rem);
+}
+
+#restaurant {
+  height: 200px;
+  width: 75%;
+  background-color: #f7f7f9;
+  position: fixed;
+  bottom: -200px;
+  left: 25%;
+  -webkit-transition: 300ms ease;
+  transition: 300ms ease;
+}
+
+.show-resto {
+  bottom: 0px !important;
+  -webkit-transition: 300ms ease;
+  transition: 300ms ease;
+  z-index: 250;
+}

@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>Convene</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+  <link href="./assets/css/style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="p-2">
+        <button class="navbar-item navbar-toggler pull-xs-left" id="navbarSideButton" type="button">&#9776;</button>
+      </div>
+
+      <div class="ml-auto p-2">
+        <a href="#" class="px-5 d-inline-block"><span class="text-center text-dark align-middle">Register</span></a>
+        <a href="#" class="px-5 d-inline-block"><span class="text-center text-dark align-middle" id="loginLogout">Login</span></a>
+      </div>
+
+      <div class="card navbar-side" id="navbarSide">
+        <img class="card-img-top navbar-side-item" src="./assets/images/profile-placeholder.jpg">
+        <div class="card-body navbar-side-item">
+          <h4 class="card-title">Name</h4>
+          <p class="card-text">Some text about the user.</p>
+        </div>
+        <ul class="list-group list-group-flush navbar-side-item">
+          <li class="list-group-item">User address</li>
+          <li class="list-group-item">User cuisine preferences</li>
+        </ul>
+        <div class="card-body navbar-side-item">
+          <a href="#" class="card-link">Card link</a>
+          <a href="#" class="card-link">Another link</a>
+        </div>
+      </div>
+
+      <div class="overlay"></div>
+    </nav>
+  </header>
+
+  <main class="d-flex">
+    <!-- left pane -->
+    <div id="leftPane" class="card">
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item">Cras justo odio</li>
+        <li class="list-group-item">Dapibus ac facilisis in</li>
+        <li class="list-group-item">Vestibulum at eros</li>
+        <li class="list-group-item">Lorem ipsum dolor sit amet</li>
+        <li class="list-group-item">Sed do eiusmod tempor incididunt</li>
+      </ul>
+    </div>
+
+    <!-- user pin -->
+    <div id="userPin"></div>
+    <div id="restoPin"></div>
+
+    <div id="restaurant" class="card">
+      <div class="card-header">Restaurant Name</div>
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item">Address</li>
+        <li class="list-group-item">Cuisine</li>
+        <li class="list-group-item">Rating</li>
+      </ul>
+    </div>
+  </main>
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+  <script src="./assets/js/script.js"></script>
+</body>
+
+</html>
